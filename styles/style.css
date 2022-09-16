@@ -1,11 +1,7 @@
 .page {
   min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы */
   max-width: 1600px;
-  /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', 'Arial', sans-serif;
 }
 
@@ -17,7 +13,6 @@
   min-height: 600px;
   max-height: 756px;
   background-color: #f2f2f2;
-  /* выше установили ограничения для секции */
 }
 
 .logo {
@@ -67,7 +62,7 @@
   background-size:auto;
   z-index: 1;
 }
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+
 .header__square-pic {
   position:absolute;
   margin-top: 64px;
@@ -75,13 +70,6 @@
   height: 568px;
   width: 568px;
   background-color: #2f80ed;
-}
-/* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
 }
 
 .description {
@@ -135,6 +123,12 @@
   font-weight: 600;
 }
 
+.section-title_theme_dark {
+  margin: 0 auto;
+  width: 60%;
+  color: white;
+}
+
 .section-subtitle {
   margin: 0;
   margin-top: 20px;
@@ -142,6 +136,12 @@
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
+}
+
+.section-subtitle_theme_dark {
+  margin: 20px auto 0;
+  width: 60%;
+  color: white;
 }
 
 .table {
@@ -152,10 +152,20 @@
   width: 1100px;
 }
 
+.table_theme_dark {
+  margin: 0 auto;
+}
+
 .table__cell {
   margin: 0;
   margin-top: 60px;
   width: 250px;
+}
+
+.table__cell_theme_dark {
+  width: 200px;
+  margin: 0;
+  margin-top: 80px;
 }
 
 .table__heading {
@@ -165,12 +175,20 @@
   font-weight: 600;
 }
 
+.table__heading_theme_dark {
+  color: white;
+}
+
 .table__text {
   margin: 0;
   margin-top: 20px;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
+}
+
+.table__text_theme_dark {
+  color: white;
 }
 
 .feynman {
@@ -213,5 +231,31 @@
   color: #2f80ed;
   text-decoration: none;
 }
+
+.kaufman {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-color: #1f1f1f;
+  z-index: 0;
+}
+
+.kaufman__triangle {
+  position: absolute;
+  width: 877px;
+  height: 877px;
+  margin: 0;
+  top: 0;
+  right: -210px;
+  background-image: url('/images/kaufman-triangle.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+  z-index: -1;
+}
+
+
 /* ВРЕМЕННЫЕ!!! */
 
