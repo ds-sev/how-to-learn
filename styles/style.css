@@ -13,6 +13,7 @@
   min-height: 600px;
   max-height: 756px;
   background-color: #f2f2f2;
+  z-index: 1;
 }
 
 .logo {
@@ -22,29 +23,34 @@
 
 .logo_place_header {
   position: absolute;
-  margin: 30px 64px;
+  top: 30px;
+  left: 64px;
+}
+
+.logo_place_footer {
+  background-image: url('../images/logo_place_footer.svg');
 }
 
 .header__title {
   align-self: center;
+  margin: 0;
   margin-left: 64px;
   width: 730px;
   line-height: 96px;
   font-size: 102px;
   font-weight: 600;
-  z-index: 3;
 }
 
 .header__subtitle {
   position: absolute;
-  margin: 0 64px;
+  margin: 0;
   bottom: 30px;
+  left: 64px;
   width: 388px;
   height: 80px;
   line-height: 25px;
   font-size: 18px;
   font-weight: 400;
-  z-index: 3;
 }
 
 .header__link {
@@ -58,21 +64,18 @@
   bottom: 0;
   width: 765px;
   height: 608px;
-  background-size:auto;
-  z-index: 1;
+  object-fit:cover;
+  z-index: -1;
 }
 
 .header__square-pic {
   position:absolute;
-  margin-top: 64px;
+  top: 64px;
   right: 0;
   height: 568px;
   width: 568px;
   background-color: #2f80ed;
-}
-
-.description {
-  margin: 0;
+  z-index: -2;
 }
 
 .two-columns {
@@ -80,7 +83,6 @@
   justify-content: space-between;
   margin: 100px auto;
   width: 80%;
-  min-width: 784px;
 }
 
 .two-columns__brief {
@@ -95,11 +97,9 @@
 .two-columns__main-text {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  margin: 0 0 auto auto;
+  margin: 0;
   width: 80%;
-  /* min-width: 784px; */
-  margin-bottom: -30px;
+  min-width: 784px;
 }
 
 .two-columns__paragraph {
@@ -108,6 +108,10 @@
   line-height: 34px;
   font-size: 24px;
   font-weight: 400;
+}
+
+.two-columns__paragraph:last-child {
+  padding-bottom: 0;
 }
 
 .two-columns__span-accent {
@@ -201,7 +205,7 @@
 
 .feynman {
   position: relative;
-  height: 890px;
+  min-height: 890px;
   background-image: url('../images/feynman.png');
   background-repeat: no-repeat;
   background-position: bottom left;
@@ -247,7 +251,7 @@
   padding-top: 90px;
   padding-bottom: 90px;
   background-color: #1f1f1f;
-  z-index: 0;
+  z-index: 1;
 }
 
 .kaufman__triangle {
@@ -272,6 +276,7 @@
   padding-bottom: 40px;
   min-height: 350px;
   background-color: #1f1f1f;
+  box-sizing: border-box;
 }
 
 .footer__columns {
@@ -287,10 +292,6 @@
   flex-basis: 711px;
   justify-content: space-between;
 
-}
-
-.logo_place_footer {
-  background-image: url('../images/logo_place_footer.svg');
 }
 
 .footer__author {
