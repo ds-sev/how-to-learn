@@ -3,6 +3,7 @@
 
 @import url(../blocks/link/link.css);
 @import url(../blocks/rotation/rotation.css);
+@import url(../blocks/list-style/list-style.css);
 
 @import url(../blocks/logo/logo.css);
 @import url(../blocks/logo/_place/logo_place_header.css);
