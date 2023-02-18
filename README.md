@@ -1,5 +1,5 @@
 # Проект: Научиться учиться
-<img src="" width="400px" align="right"> 
+<img src="https://github.com/ds-sev/how-to-learn/blob/main/images/how_to_prewiev.png" width="400px" align="right"> 
 
 [Посмотреть готовый проект](https://ds-sev.github.io/how-to-learn/)
 
